@@ -1,3 +1,21 @@
+#n8n with PostgreSQL locally
+Starts n8n with PostgreSQL as database.
+
+Start
+To start n8n with PostgreSQL simply start docker-compose by executing the following command in the current folder.
+docker-compose up -d
+
+IMPORTANT: But before you do that change the default users and passwords in the .env file!
+
+To stop it execute:
+docker-compose stop
+
+Configuration
+The default name of the database, user and password for PostgreSQL can be changed in the .env file in the current directory.
+
+Make sure the init-data.sh file has the correct permissions:
+chmod +x init-data.sh
+
 # n8n-render
 
 Successfull installation of n8n on Render using Docker.
